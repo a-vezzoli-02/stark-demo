@@ -1,0 +1,3 @@
+**/node_modules/*
+./schema-generator/out/*
+!./schema-generator/out/.gitkeep

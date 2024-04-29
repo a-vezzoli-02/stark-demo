@@ -1,0 +1,39 @@
+{
+	"version": 1,
+	"properties": {
+		"name": "SchoolClassTimetable",
+		"tableName": "school_class_timetable",
+		"columns": [
+			{
+				"name": "id",
+				"type": "number",
+				"columnType": "INTEGER",
+				"isPrimary": true,
+				"isAutoIncrement": true,
+				"isNullable": false
+			},
+			{
+				"name":	"hour",
+				"type": "number",
+				"columnType": "SMALLINT",
+				"isNullable": false
+			},
+			{
+				"name":	"schoolClass",
+				"columnName": "school_class_id",
+				"type": "number",
+				"columnType": "INTEGER",
+				"isNullable": false,
+				"relation": "SchoolClass"
+			},
+			{
+				"name":	"teacher",
+				"columnName": "teacher_id",
+				"type": "number",
+				"columnType": "INTEGER",
+				"isNullable": false,
+				"relation": "Teacher"
+			}
+		]
+	}
+}

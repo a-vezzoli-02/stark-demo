@@ -1,0 +1,29 @@
+{
+	"version": 1,
+	"properties": {
+		"name": "SchoolClass",
+		"tableName": "school_class",
+		"columns": [
+			{
+				"name": "id",
+				"type": "number",
+				"columnType": "INTEGER",
+				"isPrimary": true,
+				"isAutoIncrement": true,
+				"isNullable": false
+			},
+			{
+				"name":	"year",
+				"type": "number",
+				"columnType": "SMALLINT",
+				"isNullable": false
+			},
+			{
+				"name":	"label",
+				"type": "string",
+				"columnType": "TEXT",
+				"isNullable": false
+			}
+		]
+	}
+}

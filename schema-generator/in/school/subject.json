@@ -1,0 +1,23 @@
+{
+	"version": 1,
+	"properties": {
+		"name": "Subject",
+		"tableName": "subject",
+		"columns": [
+			{
+				"name": "id",
+				"type": "number",
+				"columnType": "INTEGER",
+				"isPrimary": true,
+				"isAutoIncrement": true,
+				"isNullable": false
+			},
+			{
+				"name":	"label",
+				"type": "string",
+				"columnType": "TEXT",
+				"isNullable": false
+			}
+		]
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"version": 1,
+	"properties": {
+		"name": "Student",
+		"tableName": "student",
+		"columns": [
+			{
+				"name": "id",
+				"type": "number",
+				"columnType": "INTEGER",
+				"isPrimary": true,
+				"isAutoIncrement": true,
+				"isNullable": false
+			},
+			{
+				"name": "name",
+				"type": "string",
+				"columnType": "TEXT",
+				"isNullable": false
+			},
+			{
+				"name": "surname",
+				"type": "string",
+				"columnType": "TEXT",
+				"isNullable": false
+			},
+			{
+				"name": "schoolClass",
+				"columnName": "school_class_id",
+				"type": "number",
+				"columnType": "INTEGER",
+				"isNullable": false,
+				"relation": "SchoolClass"
+			}
+		]
+	}
+}

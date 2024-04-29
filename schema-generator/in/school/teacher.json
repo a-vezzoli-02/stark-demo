@@ -1,0 +1,37 @@
+{
+	"version": 1,
+	"properties": {
+		"name": "Teacher",
+		"tableName": "teacher",
+		"columns": [
+			{
+				"name": "id",
+				"type": "number",
+				"columnType": "INTEGER",
+				"isPrimary": true,
+				"isAutoIncrement": true,
+				"isNullable": false
+			},
+			{
+				"name": "name",
+				"type": "string",
+				"columnType": "TEXT",
+				"isNullable": false
+			},
+			{
+				"name": "surname",
+				"type": "string",
+				"columnType": "TEXT",
+				"isNullable": false
+			},
+			{
+				"name": "subject",
+				"columnName": "subject_id",
+				"type": "number",
+				"columnType": "INTEGER",
+				"isNullable": false,
+				"relation": "Subject"
+			}
+		]
+	}
+}
